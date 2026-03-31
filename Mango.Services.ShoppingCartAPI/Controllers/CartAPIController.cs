@@ -25,10 +25,12 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
         [HttpPost("CartUpsert")]
         public async Task<ResponseDto> CartUpsert(CartDto cartDto)
         {
+            ResponseDto response = new ResponseDto();
             var cartHeaderFromDb = await _db.CartHeaders.FirstOrDefaultAsync(u=>u.UserId==cartDto.CartHeader.UserId);
             if (cartHeaderFromDb == null)
             {
-
+                response.IsSuccess = false;
+                return response;
             }
             else
             {
@@ -36,6 +38,8 @@ namespace Mango.Services.ShoppingCartAPI.Controllers
                 //check if details has same product
                 _db.CartDetails.FirstOrDefault(u => u.ProductId == cartDto.CartDetails.First().ProductId);
             }
+            response.IsSuccess = false;
+            return response;
         }
 
 
