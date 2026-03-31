@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "wUmLrm6xl+7CY3npP3FCyjpvYmccJprKz1R+4O6qTTg=",
-  "Source": "Mango.Services.AuthAPI",
-  "BasePath": "_content/Mango.Services.AuthAPI",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"GexHUOZ1BqhKqX3lRxO32aPS5vmgIUZSu3a4N32Am+E=","Source":"Mango.Services.AuthAPI","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
